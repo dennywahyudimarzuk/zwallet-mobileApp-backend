@@ -1,0 +1,59 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Denny\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add firebase-admin
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Denny\AppData\Local\Microsoft\WindowsApps;C:\Users\Denny\AppData\Roaming\npm;C:\Users\Denny\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Denny\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\heroku\bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  12.18.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'D:\Arkademy\BOOTCAMP\Responsive Team\zwallet-responsive-server\node_modules\bcrypt\lib\binding\napi-v3\bcrypt_lib.node'
+
+npm manifest: 
+  {
+    "name": "zwallet-server",
+    "version": "1.0.0",
+    "description": "",
+    "engines": {
+      "node": "12.x"
+    },
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "dev": "nodemon index.js"
+    },
+    "author": "Rizky Agung",
+    "license": "ISC",
+    "dependencies": {
+      "aws-sdk": "^2.783.0",
+      "axios": "^0.21.0",
+      "bcrypt": "^5.0.0",
+      "body-parser": "^1.19.0",
+      "cors": "^2.8.5",
+      "dotenv": "^8.2.0",
+      "express": "^4.17.1",
+      "express-validator": "^6.6.1",
+      "jsonwebtoken": "^8.5.1",
+      "midtrans-client": "^1.2.1",
+      "moment": "^2.29.1",
+      "multer": "^1.4.2",
+      "mysql": "^2.18.1"
+    },
+    "devDependencies": {
+      "morgan": "^1.10.0",
+      "nodemon": "^2.0.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
