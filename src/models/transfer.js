@@ -40,6 +40,20 @@ module.exports = {
       );
     });
   },
+  getAllsHistoryUser: function (id) {
+    return new Promise((resolve, reject) => {
+      db.query(
+        `SELECT amount, receiver, photo, sender, note, photo_sender, id_sender FROM transfer WHERE id_sender=${id} OR id_receiver=${id} ORDER BY date DESC`,
+        (err, res) => {
+          if (!err) {
+            resolve(res);
+          } else {
+            reject(new Error(err));
+          }
+        }
+      );
+    });
+  },
   getHistoryToday: function (id) {
     return new Promise((resolve, reject) => {
       db.query(

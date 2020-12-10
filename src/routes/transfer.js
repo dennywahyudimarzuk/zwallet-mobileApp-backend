@@ -4,6 +4,7 @@ const { authentication } = require('../middlewares/auth')
 
 router
     .get('/history/all', authentication, transferController.getAllHistoryUser)
+    .get('/history/alls', authentication, transferController.getAllsHistoryUser)
     .get('/history', authentication, transferController.getHistoryUser)
     .get('/history/today', authentication, transferController.getHistoryToday)
     .get('/history/filter', authentication, transferController.getHistoryByFilter)

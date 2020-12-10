@@ -26,6 +26,17 @@ module.exports = {
       });
     }
   },
+  getAllsHistoryUser: async function (req, res) {
+    try {
+      const { id } = req.token;
+      const result = await transferModel.getAllsHistoryUser(id);
+      response(res, 200, result);
+    } catch (error) {
+      res.status(500).send({
+        message: error.message,
+      });
+    }
+  },
   getHistoryToday: async function (req, res) {
     try {
       const { id } = req.token;
