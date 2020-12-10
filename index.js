@@ -14,6 +14,7 @@ const db = require('./src/config/mysql')
 var serviceAccount = require("./src/services/zwallet-mobileapp-firebase-adminsdk-in2t3-9792d46a99.json");
 
 
+
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://zwallet-mobileapp.firebaseio.com",
